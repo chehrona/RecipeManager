@@ -1,29 +1,19 @@
 import React from 'react';
-import { View, Text, SafeAreaView, TextInput } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
 import { styles } from './appStyles';
 
+// Components
+import Header from './components/header/Header.tsx';
+import Body from './components/body/Body.tsx';
+import NavBar from './components/navBar/NavBar.tsx';
+
 function App(): React.JSX.Element {
-    const [inputValue, setInputValue] = React.useState('');
-
-    const handleSearch = (inputText: string) => {
-        console.log(inputText, 'text');
-        setInputValue(inputText);
-    };
-
     return (
         <SafeAreaView style={styles.wrapper}>
             <View style={styles.container}>
-                <View style={styles.header}>
-                    <Text style={styles.viewTitle}>Recipes</Text>
-                    <View style={styles.searchWrapper}>
-                        <TextInput
-                            style={styles.inputField}
-                            value={inputValue}
-                            placeholder="Search"
-                            onChangeText={handleSearch}
-                        />
-                    </View>
-                </View>
+                <Header />
+                <Body />
+                <NavBar />
             </View>
         </SafeAreaView>
     );

@@ -9,10 +9,10 @@ const recipes = [
         img: 'https://i.pinimg.com/564x/43/ff/2f/43ff2fe3ee234faa7313725adc82cb60.jpg',
     },
     { name: 'Greek meatballs', img: './path/to/image.png' },
-    { name: 'Greek meatballs', img: './path/to/image.png' },
+    { name: 'Greek meatballs-2', img: './path/to/image.png' },
 ];
 
-function Body(): React.JSX.Element {
+const Body: React.FC = () => {
     return (
         <View style={styles.container}>
             <FlatList
@@ -21,10 +21,10 @@ function Body(): React.JSX.Element {
                     <RecipeCard img={item.img} name={item.name} />
                 )}
                 contentContainerStyle={styles.cardList}
-                keyExtractor={(item, index) => index.toString()}
+                keyExtractor={(item) => item.name}
             />
         </View>
     );
-}
+};
 
 export default Body;

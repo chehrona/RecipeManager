@@ -10,7 +10,7 @@ interface CardProps {
 const RecipeCard: React.FC<CardProps> = ({ img, name }) => {
     return (
         <View style={styles.wrapper}>
-            <Image source={{ uri: img }} />
+            <Image style={styles.image} source={{ uri: img }} />
         </View>
     );
 };

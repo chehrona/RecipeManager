@@ -20,7 +20,6 @@ function Body(): React.JSX.Element {
                 renderItem={({ item }) => (
                     <RecipeCard img={item.img} name={item.name} />
                 )}
-                horizontal={true}
                 contentContainerStyle={styles.cardList}
                 keyExtractor={(item, index) => index.toString()}
             />

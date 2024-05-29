@@ -2,14 +2,14 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     container: {
-        width: '100%',
         flex: 1,
+    },
+    cardList: {
+        paddingHorizontal: 15,
+        paddingVertical: 10,
         flexDirection: 'row',
         flexWrap: 'wrap',
-        gap: 15,
         justifyContent: 'space-between',
-        paddingRight: 15,
-        paddingLeft: 15,
-        paddingTop: 10,
+        gap: 15,
     },
 });

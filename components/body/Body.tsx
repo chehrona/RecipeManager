@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { FlatList, View } from 'react-native';
 import { styles } from './bodyStyles';
 import RecipeCard from '../recipeCard/RecipeCard';
 
@@ -15,11 +15,15 @@ const recipes = [
 function Body(): React.JSX.Element {
     return (
         <View style={styles.container}>
-            {recipes.map((recipe, i) => {
-                return (
-                    <RecipeCard key={i} img={recipe.img} name={recipe.name} />
-                );
-            })}
+            <FlatList
+                data={recipes}
+                renderItem={({ item }) => (
+                    <RecipeCard img={item.img} name={item.name} />
+                )}
+                horizontal={true}
+                contentContainerStyle={styles.cardList}
+                keyExtractor={(item, index) => index.toString()}
+            />
         </View>
     );
 }

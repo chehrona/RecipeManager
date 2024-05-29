@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TextInput } from 'react-native';
+import FontAwesome6 from 'react-native-vector-icons/FontAwesome';
 
 import { styles } from './headerStyles';
 
@@ -15,8 +16,8 @@ const Header: React.FC = () => {
         <View style={styles.container}>
             <Text style={styles.viewTitle}>Recipes</Text>
             <View style={styles.searchWrapper}>
+                <FontAwesome6 name={'search'} style={styles.icon} />
                 <TextInput
-                    style={styles.inputField}
                     value={inputValue}
                     placeholder="Search"
                     onChangeText={handleSearch}

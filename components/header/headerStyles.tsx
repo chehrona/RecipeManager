@@ -4,10 +4,10 @@ export const styles = StyleSheet.create({
     container: {
         flex: 0.125,
         width: '100%',
-        paddingTop: 10,
+        paddingTop: 5,
         paddingRight: 15,
         paddingLeft: 15,
-        paddingBottom: 10,
+        paddingBottom: 5,
     },
     viewTitle: {
         textAlign: 'center',
@@ -17,6 +17,8 @@ export const styles = StyleSheet.create({
     },
     searchWrapper: {
         width: '100%',
+        flexDirection: 'row',
+        alignItems: 'center',
         paddingTop: 5,
         paddingBottom: 5,
         paddingRight: 7,
@@ -25,5 +27,8 @@ export const styles = StyleSheet.create({
         borderRadius: 5,
         backgroundColor: '#e9e5e5',
     },
-    inputField: {},
+    icon: {
+        color: 'grey',
+        marginRight: 5,
+    },
 });

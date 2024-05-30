@@ -40,7 +40,6 @@ const NavBar: React.FC = () => {
                     />
                 )}
                 keyExtractor={(item) => item.id}
-                contentContainerStyle={styles.navList}
             ></FlatList>
         </View>
     );

@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#23221f',
         flex: 0.1,
         width: '100%',
+        flexDirection: 'row',
         paddingTop: 5,
         paddingRight: 15,
         paddingLeft: 15,
@@ -15,12 +16,6 @@ export const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 1,
         shadowRadius: 3,
-    },
-    navList: {
-        flex: 1,
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
     },
     iconWrapper: {
         flex: 1,

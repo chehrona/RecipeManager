@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TouchableOpacity } from 'react-native';
+import { Text, Pressable } from 'react-native';
 import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
 
 import { styles } from './navBarStyles';
@@ -20,7 +20,7 @@ const NavButton: React.FC<ButtonProps> = ({
     handleViewChange,
 }) => {
     return (
-        <TouchableOpacity
+        <Pressable
             style={styles.iconWrapper}
             onPress={() => handleViewChange(index)}
         >
@@ -35,7 +35,7 @@ const NavButton: React.FC<ButtonProps> = ({
             >
                 {text}
             </Text>
-        </TouchableOpacity>
+        </Pressable>
     );
 };
 

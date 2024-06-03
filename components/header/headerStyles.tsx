@@ -1,13 +1,11 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+const screenWidth = Dimensions.get('window').width;
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 0.125,
-        width: '100%',
-        paddingTop: 5,
-        paddingRight: 15,
-        paddingLeft: 15,
-        paddingBottom: 5,
+        flex: 0.08,
+        width: screenWidth - 30,
     },
     viewTitle: {
         textAlign: 'center',
@@ -19,16 +17,13 @@ export const styles = StyleSheet.create({
         width: '100%',
         flexDirection: 'row',
         alignItems: 'center',
-        paddingTop: 5,
-        paddingBottom: 5,
-        paddingRight: 7,
-        paddingLeft: 7,
-        marginTop: 10,
+        padding: 7,
         borderRadius: 5,
         backgroundColor: '#e9e5e5',
     },
     icon: {
         color: 'grey',
         marginRight: 5,
+        fontSize: 16,
     },
 });

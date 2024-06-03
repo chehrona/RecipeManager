@@ -1,9 +1,12 @@
 import React from 'react';
+
 import { View, Text, TouchableOpacity } from 'react-native';
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
 
 import { styles } from './navBarStyles';
+
+const icons = ['utensils', 'add', 'basket-shopping'];
 
 const NavBar: React.FC<BottomTabBarProps> = ({
     state,
@@ -44,6 +47,7 @@ const NavBar: React.FC<BottomTabBarProps> = ({
 
                 return (
                     <TouchableOpacity
+                        key={route.key}
                         accessibilityRole="button"
                         accessibilityState={isFocused ? { selected: true } : {}}
                         accessibilityLabel={options.tabBarAccessibilityLabel}
@@ -53,7 +57,7 @@ const NavBar: React.FC<BottomTabBarProps> = ({
                         style={styles.iconWrapper}
                     >
                         <FontAwesome6
-                            name={'basket'}
+                            name={icons[index]}
                             style={
                                 isFocused
                                     ? styles.activeIcon
@@ -61,11 +65,13 @@ const NavBar: React.FC<BottomTabBarProps> = ({
                             }
                         />
                         <Text
-                            style={{
-                                color: isFocused ? '#fbde82' : '#cac9c9',
-                            }}
+                            style={
+                                isFocused
+                                    ? styles.iconNameActive
+                                    : styles.iconNameInactive
+                            }
                         >
-                            {'label'}
+                            {label.toString()}
                         </Text>
                     </TouchableOpacity>
                 );

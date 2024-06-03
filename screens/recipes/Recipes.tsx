@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 // Components
 import Header from '../../components/header/Header';
@@ -9,10 +9,10 @@ import { styles } from '../../appStyles';
 
 const Recipes: React.FC = () => {
     return (
-        <View style={styles.recipeContainer}>
+        <SafeAreaView style={styles.recipeContainer}>
             <Header />
             <Body />
-        </View>
+        </SafeAreaView>
     );
 };
 

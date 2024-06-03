@@ -6,7 +6,6 @@ export const styles = StyleSheet.create({
     },
     cardList: {
         paddingHorizontal: 15,
-        paddingVertical: 10,
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'space-between',

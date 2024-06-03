@@ -1,21 +1,19 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 // Components
 import Header from '../../components/header/Header';
 import Body from '../../components/body/Body';
-import NavBar from '../../components/navBar/NavBar';
 
 import { styles } from '../../appStyles';
 
-const NewRecipe: React.FC = () => {
+const Recipes: React.FC = () => {
     return (
-        <View style={styles.newRecipeContainer}>
+        <SafeAreaView style={styles.recipeContainer}>
             <Header />
             <Body />
-            <NavBar />
-        </View>
+        </SafeAreaView>
     );
 };
 
-export default NewRecipe;
+export default Recipes;

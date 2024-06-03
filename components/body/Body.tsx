@@ -1,7 +1,8 @@
 import React from 'react';
-import { FlatList, View } from 'react-native';
+import { FlatList } from 'react-native';
 import { styles } from './bodyStyles';
 import RecipeCard from '../recipeCard/RecipeCard';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const recipes = [
     {
@@ -14,7 +15,7 @@ const recipes = [
 
 const Body: React.FC = () => {
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <FlatList
                 data={recipes}
                 renderItem={({ item }) => (
@@ -23,7 +24,7 @@ const Body: React.FC = () => {
                 contentContainerStyle={styles.cardList}
                 keyExtractor={(item) => item.name}
             />
-        </View>
+        </SafeAreaView>
     );
 };
 

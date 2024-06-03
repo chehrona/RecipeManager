@@ -1,8 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-    wrapper: {
+    container: {
         flex: 1,
+        backgroundColor: '#0d0d0d',
     },
     recipeContainer: {
         backgroundColor: '#0d0d0d',

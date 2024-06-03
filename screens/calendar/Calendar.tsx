@@ -7,7 +7,7 @@ import Body from '../../components/body/Body';
 
 import { styles } from '../../appStyles';
 
-const NewRecipe: React.FC = () => {
+const Calendar: React.FC = () => {
     return (
         <SafeAreaView style={styles.recipeContainer}>
             <Header />
@@ -16,4 +16,4 @@ const NewRecipe: React.FC = () => {
     );
 };
 
-export default NewRecipe;
+export default Calendar;

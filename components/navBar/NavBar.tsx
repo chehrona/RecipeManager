@@ -6,7 +6,7 @@ import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
 
 import { styles } from './navBarStyles';
 
-const icons = ['utensils', 'add', 'basket-shopping'];
+const icons = ['utensils', 'calendar', 'basket-shopping'];
 
 const NavBar: React.FC<BottomTabBarProps> = ({
     state,

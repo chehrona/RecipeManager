@@ -8,9 +8,10 @@ import { enableScreens } from 'react-native-screens';
 // Components
 import NavBar from './components/navBar/NavBar';
 import Recipes from './screens/recipes/Recipes';
-import NewRecipe from './screens/newRecipe/NewRecipe';
+import NewRecipe from './screens/calendar/Calendar';
 
 import { styles } from './appStyles';
+import AddNewButton from './screens/newRecipe/AddNewButton';
 
 enableScreens();
 
@@ -21,8 +22,14 @@ function App(): React.JSX.Element {
         <NavigationContainer>
             <View style={styles.container}>
                 <Tab.Navigator tabBar={(props) => <NavBar {...props} />}>
-                    <Tab.Screen name="Recipes" component={Recipes} />
-                    <Tab.Screen name="Add new" component={NewRecipe} />
+                    <Tab.Screen
+                        name="Recipes"
+                        component={Recipes}
+                        options={() => ({
+                            headerRight: () => <AddNewButton />,
+                        })}
+                    />
+                    <Tab.Screen name="Calendar " component={NewRecipe} />
                     <Tab.Screen name="Groceries" component={NewRecipe} />
                 </Tab.Navigator>
             </View>

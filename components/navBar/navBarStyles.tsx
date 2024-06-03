@@ -38,10 +38,12 @@ export const styles = StyleSheet.create({
         marginTop: 5,
         fontWeight: 'bold',
         color: '#fbde82',
+        textAlign: 'center',
     },
     iconNameInactive: {
         marginTop: 5,
         fontWeight: 'bold',
         color: '#cac9c9',
+        textAlign: 'center',
     },
 });

@@ -31,7 +31,6 @@
 		37DEBB1D2C077A1600F2AFB6 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37DEBB0A2C0779FC00F2AFB6 /* SimpleLineIcons.ttf */; };
 		37DEBB1E2C077A1600F2AFB6 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37DEBB0B2C0779FC00F2AFB6 /* FontAwesome6_Brands.ttf */; };
 		37DEBB1F2C077A1600F2AFB6 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37DEBB0C2C0779FC00F2AFB6 /* MaterialIcons.ttf */; };
-		37DEBB202C077B9E00F2AFB6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB61A68108700A75B9A /* Info.plist */; };
 		7699B88040F8A987B510C191 /* libPods-RecipeManager-RecipeManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RecipeManager-RecipeManagerTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A31165CC74FB90E548AF581D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 7072EAC801F49750B96401E1 /* PrivacyInfo.xcprivacy */; };
@@ -323,7 +322,6 @@
 				37DEBB142C077A1600F2AFB6 /* AntDesign.ttf in Resources */,
 				37DEBB152C077A1600F2AFB6 /* Foundation.ttf in Resources */,
 				37DEBB162C077A1600F2AFB6 /* Ionicons.ttf in Resources */,
-				37DEBB202C077B9E00F2AFB6 /* Info.plist in Resources */,
 				37DEBB172C077A1600F2AFB6 /* FontAwesome5_Solid.ttf in Resources */,
 				37DEBB182C077A1600F2AFB6 /* FontAwesome5_Regular.ttf in Resources */,
 				37DEBB192C077A1600F2AFB6 /* FontAwesome.ttf in Resources */,

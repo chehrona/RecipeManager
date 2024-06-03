@@ -14,7 +14,6 @@ const Header: React.FC = () => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.viewTitle}>Recipes</Text>
             <View style={styles.searchWrapper}>
                 <FontAwesome6 name={'search'} style={styles.icon} />
                 <TextInput

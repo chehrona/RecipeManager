@@ -12,26 +12,33 @@ interface ButtonProps {
     isSelected: boolean;
 }
 
-const NavButton: React.FC<ButtonProps> = ({
-    text,
-    icon,
-    isSelected,
-    index,
-    handleViewChange,
-}) => {
+const NavButton: React.FC<ButtonProps> = ({ text, icon }) => {
     return (
         <TouchableOpacity
+            accessibilityRole="button"
+            accessibilityState={isFocused ? { selected: true } : {}}
+            accessibilityLabel={options.tabBarAccessibilityLabel}
+            testID={options.tabBarTestID}
+            onPress={onPress}
+            onLongPress={onLongPress}
             style={styles.iconWrapper}
-            onPress={() => handleViewChange(index)}
+            icon={'basket'}
         >
+            <Text
+                style={{
+                    color: isFocused ? '#fbde82' : '#cac9c9',
+                }}
+            >
+                {label}
+            </Text>
             <FontAwesome6
                 name={icon}
                 style={isSelected ? styles.activeIcon : styles.inactiveIcon}
             />
             <Text
-                style={
-                    isSelected ? styles.iconNameActive : styles.iconNameInactive
-                }
+                style={{
+                    color: isFocused ? '#fbde82' : '#cac9c9',
+                }}
             >
                 {text}
             </Text>

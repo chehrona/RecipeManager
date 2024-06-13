@@ -1,3 +1,4 @@
+import { DrawerLayoutAndroidBase } from 'react-native';
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
@@ -5,9 +6,10 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#0d0d0d',
     },
-    headerStyle: {
-        backgroundColor: '#0d0d0d',
-        color: 'white',
+    loader: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     recipeContainer: {
         backgroundColor: '#0d0d0d',

@@ -1,4 +1,3 @@
-import { DrawerLayoutAndroidBase } from 'react-native';
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
@@ -23,4 +22,5 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    calendarContainer: {},
 });
